@@ -9,9 +9,14 @@ Claude Code is powerful. Running it unconstrained on your computer is risky. Thi
 ## Quick Start
 
 1. [Install Docker](https://docs.docker.com/engine/install/)
-2. [Install DevPod](https://devpod.sh/docs/getting-started/install)
-3. Clone this repository
-4. Run: `devpod up . --ide vscode`
+2. [Install DevPod CLI](https://devpod.sh/docs/getting-started/install#install-devpod-cli)
+3. Add Docker to DevPod as the default provider:
+```bash
+devpod provider add docker
+devpod provider use docker
+```
+4. Clone this repository
+5. Run: `devpod up . --ide vscode`
 
 That's it! Claude Code is automatically installed and ready to use.
 
