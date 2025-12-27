@@ -55,8 +55,8 @@ The `.claude/settings.json` file pre-configures Claude Code to bypass permission
 
 ## See Also
 
-* [Claude Code for Python](https://github.com/jusevitch/claude_code_python)
-* [Claude Code for Python + Rust](https://github.com/jusevitch/claude_code_devpod)
+* [Claude Code DevPod template for Python](https://github.com/jusevitch/claude_code_python)
+* [Claude Code DevPod template for Python + Rust](https://github.com/jusevitch/claude_code_devpod)
 
 ## Resources
 
