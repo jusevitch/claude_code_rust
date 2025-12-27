@@ -53,6 +53,11 @@ The `.devcontainer/` folder contains:
 
 The `.claude/settings.json` file pre-configures Claude Code to bypass permission prompts (safe within containers).
 
+## See Also
+
+* [Claude Code for Python](https://github.com/jusevitch/claude_code_python)
+* [Claude Code for Python + Rust](https://github.com/jusevitch/claude_code_devpod)
+
 ## Resources
 
 - [DevPod Documentation](https://devpod.sh/docs)
