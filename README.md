@@ -1,0 +1,61 @@
+# Claude Code DevPod Template (Rust)
+
+Run Claude Code safely inside Docker containers using DevPod.
+
+Claude Code is powerful. Running it unconstrained on your computer is risky. This template runs it within Docker containers to mitigate the risk of data loss or corruption from hallucinations.
+
+[DevPod](https://devpod.sh/) is an open source alternative to GitHub Codespaces. It lets you spin up development containers from a `.devcontainer` configuration with a single command.
+
+## Quick Start
+
+1. [Install Docker](https://docs.docker.com/engine/install/)
+2. [Install DevPod](https://devpod.sh/docs/getting-started/install)
+3. Clone this repository
+4. Run: `devpod up . --ide vscode`
+
+That's it! Claude Code is automatically installed and ready to use.
+
+## What's Included
+
+- **Claude Code** - Anthropic's AI coding assistant (auto-installed)
+- **Rust** - Full Rust toolchain with rust-analyzer
+- **Node.js** - JavaScript runtime
+- **Git** + **GitHub CLI** - Version control
+
+## Using Claude Code
+
+Once the container opens in VS Code:
+
+```bash
+# Start Claude Code (recommended for containers)
+claude --dangerously-skip-permissions
+
+# Or start with normal permissions
+claude
+```
+
+## Customization
+
+Edit `.devcontainer/devcontainer.json` to customize your environment:
+
+- Change the base image (Debian, Fedora, etc.)
+- Add/remove language features (Julia, Go, etc.)
+- Add VS Code extensions
+- Modify the setup script in `.devcontainer/setup.sh`
+
+See [devcontainer features](https://containers.dev/features) for available options.
+
+## How It Works
+
+The `.devcontainer/` folder contains:
+- `devcontainer.json` - Container configuration
+- `setup.sh` - Post-creation script that installs Claude Code and uv
+
+The `.claude/settings.json` file pre-configures Claude Code to bypass permission prompts (safe within containers).
+
+## Resources
+
+- [DevPod Documentation](https://devpod.sh/docs)
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Devcontainer Features](https://containers.dev/features)
+- [Microsoft Devcontainer Images](https://hub.docker.com/r/microsoft/devcontainers)
